@@ -1,0 +1,77 @@
+// LOGIN CONTROLLER
+
+GET METHOD
+----------
+http://localhost:9090/loginController/getUser/1
+--------------------------------------------------------------------
+OUTPUT
+------
+
+{
+    "userId": "1",
+    "password": "pass",
+    "role": "user",
+    "customer": {
+        "customerId": "1",
+        "firstName": "siddharth",
+        "lastName": "Shitole",
+        "mobileNumber": "9623466397",
+        "email": "Siddhushitole.1999@gmail.com"
+    }
+}
+
+----------------------------------------------------------------------
+
+POST METHOD
+-----------
+http://localhost:9090/loginController/addUser
+----------------------------------------------------------------------
+OUTPUT
+------
+
+{
+    "userId": "2",
+    "password": "1pass",
+    "role": "1user",
+    "customer": {
+        "customerId": "1",
+        "firstName": "siddharth",
+        "lastName": "Shitole",
+        "mobileNumber": "9623466397",
+        "email": "Siddhushitole.1999@gmail.com"
+    }
+}
+
+---------------------------------------------------------------------
+
+DELETE METHOD
+------------
+http://localhost:9090/loginController/removeUser
+---------------------------------------------------------------------
+OUTPUT
+------
+
+{
+    "userId": "2",
+    "password": "1pass",
+    "role": "1user",
+    "customer": {
+        "customerId": "1",
+        "firstName": "siddharth",
+        "lastName": "Shitole",
+        "mobileNumber": "9623466397",
+        "email": "Siddhushitole.1999@gmail.com"
+    }
+}
+
+-----------------------------------------------------------------------
+
+GET METHOD
+---------
+http://localhost:9090/loginController/signOut
+----------------------------------------------------------------------
+OUTPUT
+------
+LoggedOut
+-----------------------------------------------------------------------
+
